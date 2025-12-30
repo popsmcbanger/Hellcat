@@ -1,4 +1,4 @@
-function downloadFile(content, filename, extension) {
+window.downloadFile = function(content, filename, extension) {
     if (!filename) return;
 
     // Strip any extension and force the correct one
@@ -19,7 +19,7 @@ function downloadFile(content, filename, extension) {
     URL.revokeObjectURL(url);
 }
 
-function readTextFile(e) {
+window.readTextFile = function(e) {
     const file = e.target.files[0];
     if (!file) return;
 
