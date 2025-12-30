@@ -1,0 +1,78 @@
+<html>
+    <head>
+	<title>Hellcat Web Editor</title>
+	<link href="editor.css" type="text/css" rel="stylesheet" />
+	<link rel="icon" href="images/icon.png" />
+	<!--<meta charset="UTF-8" />-->
+    </head>
+    <body>
+	<div id="banner">
+	    <h1>Hellcat</h1>
+	    <button id="collapsBtn">&lt;&lt;&lt;</button>
+	    <button id="downloadBtn">Download</button>
+	    <div id="downloadDropdown">
+		<div><label for="saveAsCode">Save as HTML code</label>
+		<input type="radio" id="saveAsCode" name="saveType" /></div>
+		<div><label for="saveAsText">Save as Hellcat code</label>
+		<input type="radio" id="saveAsText" name="saveType" checked /></div>
+		<input type="text" placeholder="my-code" id="fileNameBox" />
+		<button id="downloadCode">Download</button>
+	    </div>
+	    <label for="upload" class="custom-file-upload">Upload</label>
+	    <input type="file" accept=".hellcat" id="upload" />
+	    <button id="run">Run</button>
+	</div>
+	<div id="sideBar">
+	    <button id="filesBtn" title="files">&#128448;</button>
+	    <button id="mediaBtn" title="media">&#128427;</button>
+	    <button id="settingsBtn" title="settings">&#9881;</button>
+	    <button id="upgradeBtn" title="get premium">&uarr;&uarr;</button>
+	    <button id="codeBtn" title="code">&lt;&gt;</button>
+	    <button id="bitsBtn" title="code bits">&#128366;</button>
+	    <button id="extBtn" title="extensions"><img src="images/extIcon.png" id="extIcon" /></button>
+	</div>
+	<div id="code">
+	    <div id="html" class="editor"></div>
+	    <div id="css" class="editor"></div>
+	    <div id="js" class="editor"></div>
+	</div>
+	<div id="settings">
+	    <div>
+		<label for="pgTitle">page title</label>
+		<input type="text" id="pgTitle" placeholder="my page" />
+	    </div>
+	    <div>
+		<label for="pgIcon">page icon URL</label>
+		<input type="text" id="pgIcon" placeholder="https://icon.jpg" />
+	    </div>
+	</div>
+	<div id="files">
+	    <h2>Files are comming soon!</h2>
+	</div>
+	<div id="media">
+	    <h2>Media is comming soon!</h2>
+	</div>
+	<div id="upgrade">
+	    <h2>Pro plan is comming soon!</h2>
+	</div>
+	<div id="bits">
+	    <h2>bits are comming soon!</h2>
+	</div>
+	<div id="ext">
+	    <label for="filesExtensionCheckbox">files extension</label>
+	    <input type="checkbox" id="filesExtensionCheckbox" />
+	</div>
+	<iframe id="page" sandbox="allow-scripts allow-same-origin allow-downloads"></iframe>
+	<script src="filesExtension.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.45.0/min/vs/loader.min.js"></script>
+	<script src="editor.js"></script>
+	<script src="download.js"></script>
+	<script src="settings.js"></script>
+	<script src="files.js"></script>
+	<script src="media.js"></script>
+	<script src="upgrade.js"></script>
+	<script src="bits.js"></script>
+	<script src="extensions.js"></script>
+    </body>
+</html>
+
