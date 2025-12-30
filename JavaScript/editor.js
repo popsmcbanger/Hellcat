@@ -1,9 +1,3 @@
-//   ___    ____    ___    ___  \       ____    ____    ___	____
-//  |   \  /    \  |   \  /	       /       /    \  |   \   |
-//  |___/  |    |  |___/  \___        |	       |    |  |    |  |__
-//  |      |    |  |	      \	      |	       |    |  |    |  |
-//  |      \____/  |       ___/        \____   \____/  |___/   |____
-
 require.config({
     paths: { vs: 'https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.45.0/min/vs' }
 });
@@ -156,4 +150,5 @@ document.getElementById('codeBtn').addEventListener('click', function() {
     document.getElementById('code').style.display = 'flex';
     document.getElementById('bits').style.display = 'none';
     document.getElementById('ext').style.display = 'none';
+
 });
